@@ -1,30 +1,29 @@
-//Bubble Sort
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-int main() {
-    int n,temp, flag=0,i,j;
-    cout<<"How many values you want to read: ";
-    cin>>n;
-    int list[n];
-     for( i=0; i<n; i++)
-      cin>>list[i];
-     i=0;
-     while(i<n&&flag==0)
-     {
-         i++;flag=1;
-         for(j=0; j<n; j++)
-         {
-             if(list[j]>list[j+1])
-             {
-                 temp = list[j];
-                 list[j]=list[j+1];
-                 list[j+1]=temp;
-                 flag=0;
-             }
-         }
-     }
-     for(i=0;i<n;i++)
-     cout<<list[i]<<" ";
-    return 0;
+int main ()
+{
+   int i, j,temp,pass=0;
+   int a[10] = {10,2,0,14,43,25,18,1,5,45};
+   cout <<"Input list ...\n";
+   for(i = 0; i<10; i++) {
+      cout <<a[i]<<"\t";
+   }
+cout<<endl;
+for(i = 0; i<10; i++) {
+   for(j = i+1; j<10; j++)
+   {
+      if(a[j] < a[i]) {
+         temp = a[i];
+         a[i] = a[j];
+         a[j] = temp;
+      }
+   }
+pass++;
+}
+cout <<"Sorted Element List ...\n";
+for(i = 0; i<10; i++) {
+   cout <<a[i]<<"\t";
+}
+cout<<"\nNumber of passes taken to sort the list:"<<pass<<endl;
+return 0;
 }

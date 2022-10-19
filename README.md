@@ -36,7 +36,9 @@ Here's a home to your queries and quest for potential issues to contribute. We'v
 <br>
 You can add some good issues, repositories or any considerably relatable thing by making a PR.
 <br>
+
 And if you want to add some of your DSA Programs for open-source, you can add it [here](https://github.com/rashhhhh/HacktoberFest22/tree/main/DSA).
+
 <br>
 Hope we help each other to complete the Hacktoberfest Challenge!
 
